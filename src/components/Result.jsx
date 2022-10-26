@@ -33,7 +33,7 @@ const Box = (props) => {
         </Modal.Header>
         <Modal.Body className="sm:flex sm:justify-center sm:items-center">
         <Modal.Body className="p-1">{props.overview}</Modal.Body>
-          <img src={IMGPATH + props.image} alt="IMG" className="w-50 rounded-md"></img>
+          <img src={IMGPATH + props.image} alt="IMG" className="w-50 rounded-md "></img>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
@@ -47,9 +47,9 @@ const Box = (props) => {
         alt="IMG"
         className="w-full rounded-t-lg relative cursor-pointer"
       ></img>
-      <div className="flex justify-center px-2  items-center" onClick={handleShow}>
-        <span className="sm:text-2xl text-md text-slate-400 hover:text-[#FF8C00] cursor-pointer py-1">{props.title}</span>
-        <span className="text-xl font-bold text-yellow-500 absolute top-0 right-0 shadow-md bg-zinc-800  pl-8px rounded-bl-lg pr-8px p-1">
+      <div className="flex justify-center px-2 flex-wrap items-center" onClick={handleShow}>
+        <span className="flex text-center  sm:text-2xl text-md text-slate-400 hover:text-[#FF8C00] cursor-pointer py-1">{props.title}</span>
+        <span className="text-xl font-bold text-yellow-500 shadow-md bg-zinc-800 ml-5 rounded-bl-lg p-1">
           {<span className="text-green-500 text-xs md:text-xl">{props.rating}⭐</span>}
         </span>
       </div>
